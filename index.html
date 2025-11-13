@@ -1,19 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título y descripción -->
+  <title>Portafolio | Viviana Ríos</title>
+  <meta name="description" content="Portafolio Frontend de Viviana Ríos" />
+
+  <!-- Fuente -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome (CDN oficial, sin errores de integridad) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Tu archivo CSS -->
+  <link rel="stylesheet" href="estilo.css" />
+
+  
+</head>
+
   <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
@@ -23,18 +31,31 @@
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+
             <li>
-              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+              <a href="#mis-proyectos" onclick="seleccionar()">Proyectos</a>
             </li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
+            <li>
+              <a href="#habilidades" onclick="seleccionar()">Habilidades</a>
+            </li>
+            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
+
+        <!-- Botón Contactar (solo visible en escritorio) -->
+        <div class="acciones-header">
+          <div class="contact-button-container">
+            <button class="contact-button">
+              <a href="#contacto">Contactar Ahora</a>
+            </button>
+          </div>
+
+          <!-- Ícono Menú Hamburguesa -->
+          <div class="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
       </header>
     </div>
@@ -42,443 +63,346 @@
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
       <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img src="img/IMG_20210915_190048049.jpg" alt="" />
+        <div class="texto">
+          <h1>Viviana Ríos</h1>
+          <h2>
+            Desarrolladora Frontend. Construyendo Experiencias Digitales de Alto
+            Rendimiento.
+          </h2>
+          <p>
+            ¡Hola! Soy Viviana Ríos. Soy una Desarrolladora Frontend apasionada
+            por la Experiencia de Usuario (UX) y la optimización del rendimiento
+            web. Mi misión es transformar diseños de Figma o Framer en
+            interfaces funcionales, rápidas y accesibles.
+          </p>
+
+          <div class="redes">
+
+            <a
+                href="https://github.com/vivir13"
+                target="_blank"
+                rel="noopener noreferrer"
+            ><i class="ri-github-fill"></i></a>
+        
+            <a
+                href="https://www.linkedin.com/in/vivianariosr/"
+                target="_blank"
+                rel="noopener noreferrer">
+            <i class="ri-linkedin-fill"></i></a>
+                   
+            <a href="mailto:vivianarios0213@gmail.com?subject=Consulta%20desde%20tu%20portafolio&body=Hola%20Viviana,%0D%0A%0D%0AHe%20visto%20tu%20portafolio%20y%20estoy%20interesado%20en%20discutir%20un%20proyecto.%0D%0A%0D%0ASaludos."
+              aria-label="Enviar correo electrónico"
+              data-tooltip="Enviar Correo">
+              <i class="ri-mail-send-fill"></i></a>
         </div>
-        <h1>VIVIANA RIOS</h1>
-        <h2>DISEÑADORA Y PROGRAMADORA WEB</h2>
-        <div class="redes">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://github.com/vivir13"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/vivianariosr/"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+        </div>
+
+        <div class="contenedor-img">
+          <img
+            src="img/IMG_20210915_190048049.jpg"
+            alt="Foto de Viviana Ríos"
+          />
         </div>
       </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
+    <!-- MIS PROYECTOS -->
+    <section id="mis-proyectos" class="mis-proyectos">
       <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
+        <h2>Mis Proyectos</h2>
+        <p>Aquí hay algunos de los proyectos en los que he trabajado.</p>
+
+        <div class="galeria">
+          <!-- Proyecto 1 -->
+          <div class="proyecto">
+            <img
+              src="img/proyectos/carrito-compras.jpg"
+              alt="Proyecto Tenis Onirik"
+            />
+            <div class="proyecto-info">
+              <h3>Sitio E-commerce</h3>
+              <p>
+                Plataforma de comercio electrónico completa con React y Next.js,
+                enfocada en el rendimiento y la experiencia de usuario.
+              </p>
+              <ul class="tech-list">
+                <li>Figma</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <div class="project-actions">
+                <!--<a
+                  class="btn btn-demo"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-github"
+                  href="javascript:void(0)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >-->
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="proyecto">
+            <img
+              src="img/proyectos/perritosAdocta.png"
+              alt="Sitio E-commerce Onirik"
+            />
+            <div class="proyecto-info">
+              <h3>Sitio E-commerce</h3>
+              <p>
+                Plataforma de comercio electrónico completa con React y Next.js,
+                enfocada en rendimiento y experiencia de usuario.
+              </p>
+              <ul class="tech-list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <!--<div class="project-actions">
+                <a
+                  class="btn btn-demo"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-github"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>-->
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="proyecto">
+            <img src="img/proyectos/financiero.png" alt="Panel de Finanzas" />
+            <div class="proyecto-info">
+              <h3>Panel de Finanzas</h3>
+              <p>
+                Dashboard interactivo para gestión financiera con enfoque UI/UX.
+              </p>
+              <ul class="tech-list">
+                <li>Figma</li>
+                <li>React</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <!--<a
+                  class="btn btn-demo"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-github"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >-->
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="proyecto">
+            <img src="img/proyectos/cafe.png" alt="tenisonirik" />
+            <div class="proyecto-info">
+              <h3>Landing Page Café</h3>
+              <p>Diseño moderno y tienda funcional de café artesanal.</p>
+              <ul class="tech-list">
+                <li>Framer</li>
+                <li>HTML</li>
+                <li>React</li>
+              </ul>
+              <!--<div class="project-actions">
+                <a href="#" class="btn btn-demo">Live Demo</a>
+                <a href="#" class="btn btn-github">GitHub</a>
+              </div> -->
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="proyecto">
+            <img
+              src="img/proyectos/poshpets-pag-web.png"
+              alt="Proyecto Posh Pets"
+            />
+            <div class="proyecto-info">
+              <h3>Posh Pets</h3>
+              <p>
+                Tienda online para productos de mascotas con experiencia de
+                usuario optimizada.
+              </p>
+              <ul class="tech-list">
+                <li>Figma</li>
+                <li>React</li>
+                <li>UI/UX</li>
+              </ul>
+              <div class="project-actions">
+                <!--<a class="btn btn-demo"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a>
+                 
+                  <a
+                  class="btn btn-github"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin galeria -->
+      </div>
+      <!-- fin contenido-seccion -->
+    </section>
+
+    <!-- MIS HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+      <div class="contenido-seccion">
+        <h2>Habilidades Técnicas</h2>
         <p>
-          <span>Hola, soy Viviana Rios .</span> Mi pasión por el diseño y la
-          programación web ha marcado una nueva etapa en mi camino profesional.
-          hoy estoy completamente enfocada en el mundo del desarrollo web, un
-          ámbito que despierta en mí una profunda emoción y curiosidad
-          constante. Este nuevo viaje representa una oportunidad para seguir
-          aprendiendo, crear experiencias significativas y crecer tanto a nivel
-          profesional como personal.
+          Desde el código hasta el diseño, mi enfoque es crear productos
+          digitales de alta calidad.
         </p>
 
-        <div class="fila">
-          <!-- datos personales -->
-          <div class="col">
-            <h3>Datos Personales</h3>
-            <ul>
+        <div class="tarjetas-habilidades">
+          <!-- TARJETA 1 -->
+          <div class="tarjeta">
+            <h3>Desarrollo Frontend de Vanguardia</h3>
+            <p>
+              Desarrollo de aplicaciones web escalables y robustas utilizando
+              React y el framework Next.js. Me enfoco en la arquitectura del
+              código para asegurar la mantenibilidad y el SEO.
+            </p>
+            <ul class="lista-tech">
+              <li><span class="icon">⚛️</span> React</li>
+              <li><span class="icon">▲</span> Next.js</li>
               <li>
-                <strong>Cumpleaños</strong>
-                13-09
+                <span class="icon">&lt;/&gt;</span> HTML5, CSS3, JS (ES6+)
               </li>
-              <li>
-                <strong>Teléfono</strong>
-                9841387297
-              </li>
-              <li>
-                <strong>Email</strong>
-                vivianarios1302@gmail.com
-              </li>
-              <li>
-                <strong>Website</strong>
-                www.porfolioviviana.com
-              </li>
-              <li>
-                <strong>Dirección</strong>
-                Estado de Mexico
-              </li>
-              <li>
-                <strong>Cargo</strong>
-                <span>FREELANCE</span>
-              </li>
+              <li><span class="icon">💻</span> Git & GitHub</li>
             </ul>
           </div>
 
-          <!-- intereses -->
-          <div class="col">
-            <h3>Intereses</h3>
-            <div class="contenedor-intereses">
-              <!-- #endregion <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>JUEGOS</span>
-                        </div> -->
-              <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>MUSICA</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-passport"></i>
-                <span>VIAJAR</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-language"></i>
-                <span>IDIOMAS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>DEPORTE</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-camera"></i>
-                <span>FOTOS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="/cv/Cv Viviana Rios .pdf" download>
-          <button>
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-          </button>
-        </a>
-      </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <h2>Skills</h2>
-        <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-            <h3>Technical Skills</h3>
-            <div class="skill">
-              <span>Javascript</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>60%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>HTML & CSS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>89%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Figma</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Wordpress</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>81%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Photoshop</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>55%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Professional Skills -->
-          <div class="col">
-            <h3>Professional Skills</h3>
-            <div class="skill">
-              <span>Comunicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Creatividad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>99%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Dedicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Proyect Management</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>94%</span>
-                </div>
-              </div>
-            </div>
+          <!-- TARJETA 2 -->
+          <div class="tarjeta">
+            <h3>UX/UI y Diseño a Código</h3>
+            <p>
+              Traduzco la visión de diseño en experiencias tangibles.
+              Experiencia en el handoff de Figma y Framer a código, garantizando
+              la fidelidad del píxel y la accesibilidad (A11Y).
+            </p>
+            <ul class="lista-tech">
+              <li><span class="icon">🎨</span> Figma</li>
+              <li><span class="icon">🧩</span> Framer</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-      <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="fila">
-          <div class="col izquierda">
-            <h3>Educación</h3>
-            <div class="item izq">
-              <h4>Diseño Grafico</h4>
-              <span class="casa">Universidad Intesco Center</span>
-              <span class="fecha">2006 - 2008</span>
-              <p>Tecnico en diseño grafico</p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>From End</h4>
-              <span class="casa">Universidad Alura Latam / ONE</span>
-              <span class="fecha">2024</span>
-              <p>Diseño de paginas web con HTML, CSS y JavaScript.</p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-          </div>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto-inf">
+      <div class="contenido-contacto">
+        <h2>¿Hacemos tu próximo proyecto brillar?</h2>
+        <p>
+          Ponte en contacto conmigo para discutir cómo podemos colaborar. Puedes
+          encontrarme en las siguientes plataformas.
+        </p>
 
-          <!-- experiencia  -->
+        <div class="red">
+         
+          <a href="mailto:vivianarios0213@gmail.com?subject=Consulta%20desde%20tu%20portafolio&body=Hola%20Viviana,%0D%0A%0D%0AHe%20visto%20tu%20portafolio%20y%20estoy%20interesado%20en%20discutir%20un%20proyecto.%0D%0A%0D%0ASaludos."
+              aria-label="Enviar correo electrónico"
+              data-tooltip="Enviar Correo">
+              <i class="ri-mail-send-fill"></i></a>
 
-          <div class="col derecha">
-            <h3>Experiencia de trabajo</h3>
+          
+              
+          <a href="https://linkedin.com/in/vivianariosr"
+            aria-label="LinkedIn" 
+            data-tooltip="Ver LinkedIn">
+            <i class="ri-linkedin-fill"></i></a>
+          
+           <a href="https://github.com/vivir13" 
+           aria-label="github"
+           data-tooltip="Ver github">
+           <i class="ri-github-fill"></i></a>
 
-            <div class="item der">
-              <h4>Diseño y programacion</h4>
-              <span class="casa">Tenis Onirik</span>
-              <span class="fecha">2025</span>
-              <p>
-                Proyecto personal enfocado en la creación de una tienda en línea
-                especializada en calzado deportivo marca Supra. Participé en
-                todas las fases del desarrollo, desde el diseño hasta la
-                programación del sitio web.
-              </p>
-              <ul>
-                <li>
-                  <strong>Rol:</strong> Diseñadora y desarrolladora front-end.
-                </li>
-                <li>
-                  <strong>Herramientas utilizadas:</strong> Figma (UI/UX),
-                  HTML5, CSS3, JavaScript (ES6), localStorage, diseño
-                  responsive, estructura modular con JavaScript.
-                </li>
-                <li><strong>Funciones clave implementadas:</strong></li>
-                <ul>
-                  <li>
-                    Diseño en Figma inspirado en estilos modernos y minimalistas
-                    (tipo Shopify).
-                  </li>
-                  <li>
-                    Catálogo de productos dinámico filtrado por categorías y
-                    géneros.
-                  </li>
-                  <li>
-                    Funcionalidad de carrito de compras con persistencia en
-                    localStorage.
-                  </li>
-                  <li>
-                    Modal de login, registro y wishlist, con validación de
-                    formulario y experiencia de usuario optimizada.
-                  </li>
-                  <li>
-                    Página de detalle del producto con selección de talla, color
-                    y galería de imágenes.
-                  </li>
-                </ul>
-                <li>
-                  <strong>Resultados:</strong> Sitio funcional y optimizado para
-                  ventas, adaptable a dispositivos móviles, con navegación
-                  intuitiva y enfoque visual en la conversión.
-                </li>
-              </ul>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-
-            <div class="item der">
-              <h4>Diseño y programacion web</h4>
-              <span class="casa">Posh pets</span>
-              <span class="fecha"> 2021-2023 </span>
-              <p>
-                Participe en la creacion de una microempresa llamada Posh Pets,
-                donde realice en el desarrollo de identidades visuales y
-                logotipos para el proyectos y clientes, ayudé en la producción y
-                montaje de materiales para presentaciones y eventos corporativos
-                y contribuí al diseño y ejecución de campañas, incluyendo
-                logotipos, paletas de colores y tipografía, para la marcas de la
-                empresa. creación de la pág. web con WordPress, Woocommerce. con
-                ayuda de html y css
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>Diseño y publiciidad</h4>
-              <span class="casa">Agencia de Tours beach maya</span>
-              <span class="fecha">2019-2021</span>
-              <p>
-                Realicé diseños para publicaciones en redes sociales, edité
-                fotografías para anuncios y publicaciones para redes sociales,
-                organicé archivos. Participé en el desarrollo de identidades
-                visuales y logotipos, incluyendo logotipos, paletas de colores y
-                tipografía, para la marcas de la empresa.
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-          </div>
+          <a href="https://wa.me/529841387297?text=¡Hola%20Viviana!%20Vi%20tu%20portafolio%20y%20quiero%20saber%20más%20sobre%20tus%20servicios."
+                  aria-label="Chat en WhatsApp" 
+                  data-tooltip="Chatea por WhatsApp">
+                  <i class="ri-whatsapp-line"></i> </a>
+        
         </div>
       </div>
     </section>
 
-    <!-- porfolio  -->
-    <section id="portfolio" class="portfolio">
-      <div class="contenido-seccion">
-        <h2>PORTFOLIO</h2>
-        <div class="galeria">
-          <div class="proyecto">
-            <img src="img/carrito de compras.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo Figma</h3>
-              <p>Tenis Onirik</p>
-            </div>
-          </div>
-
-          <div class="proyecto">
-            <img src="img/perritosAdocta.png" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo Figma</h3>
-              <p>Perros en Adopcion</p>
-            </div>
-          </div>
-
-          <div class="proyecto">
-            <img src="img/Frame 60.png" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo Figma</h3>
-              <p>Panel de finanzas</p>
-            </div>
-          </div>
-
-          <div class="proyecto">
-            <img src="img/Captura de pantalla 2024-04-18 142114.png" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Encriptador</p>
-            </div>
-          </div>
-
-          <div class="proyecto">
-            <img src="img/posh pets pag web .png" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>posh pets</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-      <div class="contenido-seccion">
-        <h2>CONTACTO</h2>
-        <div class="fila">
-          <!-- Formulario -->
-          <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
-          </div>
-
-          <!-- Mapa -->
-          <div class="col">
-            <img src="img/mapa.png" alt="" />
-            <div class="info">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-location-dot"></i>
-                  Estado de Mexico
-                </li>
-                <li>
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  Llamanos: 984 1387297
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  Email: vivianarios1302@gmail.com
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <a href="#inicio" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
+<!-- 📞 BOTÓN FLOTANTE DE WHATSAPP -->
+      <a
+        href="https://wa.me/529841387297?text=¡Hola%20Viviana!%20Vi%20tu%20portafolio%20y%20quiero%20saber%20más%20sobre%20tus%20servicios."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat en WhatsApp"
+      >
+        <i class="ri-whatsapp-line"></i>
       </a>
-      <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://github.com/vivir13"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/vivianariosr/"
-          ><i class="fa-brands fa-linkedin-in"></i
-        ></a>
+  
+<!-- footer -->
+    <footer class="pie-pagina">
+      <div class="container-pagina">
+        <p class="pagina">
+          &copy; <span id="year"></span>
+          <span class="nombre-autor">Viviana Ríos</span>. Todos los derechos
+          reservados.
+        </p>
+
+        <div class="redes-footer">
+          <a
+            href="https://github.com/vivianarios"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="icono-social"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/vivianarios"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="icono-socia">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          
+        </div>
       </div>
     </footer>
 
+  <!-- GSAP y ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
